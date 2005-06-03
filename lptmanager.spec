@@ -1,4 +1,4 @@
-Summary:	A nice tool for low-level managing of the parallel port.
+Summary:	A nice tool for low-level managing of the parallel port
 Summary(pl):	Proste narzêdzie do niskopoziomowego zarz±dzania portem równoleg³ym
 Name:		lptmanager
 Version:	1.1
@@ -12,7 +12,7 @@ URL:		http://lptman.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
-BuildRequires:	gtk+2-devel
+BuildRequires:	gtk+2-devel >= 2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -21,9 +21,10 @@ experimenting with it. It uses GTK+2 for the GUI and runs on Linux and
 Windows (with mingw32).
 
 %description -l pl
-Proste narzêdzie do niskopoziomowego zarz±dzania i eksperymentowania
-portem równoleg³ym. Umo¿liwia "w³/wy³" sygna³u na konkretnych pinach.
-U¿ywa GTK+2 dla menu, dzia³a z Linksem oraz Windows (mingw32).
+Proste narzêdzie do niskopoziomowego zarz±dzania portem równoleg³ym i
+eksperymentowania z nim. Umo¿liwia w³±czanie/wy³±czanie sygna³u na
+konkretnych stykach. U¿ywa GTK+2 dla menu, dzia³a z Linuksem oraz
+Windows (mingw32).
 
 %prep
 %setup -q
