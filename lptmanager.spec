@@ -3,16 +3,17 @@ Summary(pl):	Proste narzêdzie do niskopoziomowego zarz±dzania portem równoleg³ym
 Name:		lptmanager
 Version:	1.1
 Release:	1
-License:	GPL
+License:	GPL v2
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/lptman/%{name}-%{version}.tar.gz
 # Source0-md5:	586eb102685b5be75ef7de6cabb12b4f
 Patch0:		%{name}-pl-po.patch
-URL:		http://sourceforge.net/projects/lptman
-BuildRequires:	gtk+2-devel
-BuildRequires:	X11-devel
-BuildRequires:	glib2-devel
+URL:		http://lptman.sourceforge.net/
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	gettext-devel
+BuildRequires:	glib2-devel
+BuildRequires:	gtk+2-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -50,5 +51,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog  NEWS  README
+%doc AUTHORS ChangeLog NEWS README
 %attr(755,root,root) %{_bindir}/*
