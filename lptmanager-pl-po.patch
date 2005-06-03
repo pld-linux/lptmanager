@@ -1,0 +1,265 @@
+diff -uNr lptmanager-1.1.orig/configure.in lptmanager-1.1/configure.in
+--- lptmanager-1.1.orig/configure.in	2005-06-02 11:26:12.000000000 +0200
++++ lptmanager-1.1/configure.in	2005-06-02 12:57:37.000000000 +0200
+@@ -56,7 +56,7 @@
+ AC_SUBST(GETTEXT_PACKAGE)
+ AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE",[Translation domain used])
+ dnl Add the languages which your application supports here.
+-ALL_LINGUAS="it"
++ALL_LINGUAS="it pl"
+ AM_GLIB_GNU_GETTEXT
+ 
+ 
+diff -uNr lptmanager-1.1.orig/po/pl.po lptmanager-1.1/po/pl.po
+--- lptmanager-1.1.orig/po/pl.po	1970-01-01 01:00:00.000000000 +0100
++++ lptmanager-1.1/po/pl.po	2005-06-02 12:57:53.000000000 +0200
+@@ -0,0 +1,249 @@
++# LPT Manager polish translation
++# Copyright (C) 2005 Michal Abramowicz
++# Michal Abramowicz <m.a@abram.eu.org>, 2005
++# 
++msgid ""
++msgstr ""
++"Project-Id-Version: LPT Manager 1.0\n"
++"Report-Msgid-Bugs-To: \n"
++"POT-Creation-Date: 2004-09-20 11:37+0200\n"
++"PO-Revision-Date: 2002-08-22 22:57+0200\n"
++"Last-Translator: Michal Abramowicz <m.a@abram.eu.org>\n"
++"Language-Team: Polish <podaj@adres>>\n"
++"MIME-Version: 1.0\n"
++"Content-Type: text/plain; charset=UTF-8\n"
++"Content-Transfer-Encoding: 8bit\n"
++
++#: src/functions.c:89
++msgid "UNAVAILABLE"
++msgstr "NIEDOSTĘPNE"
++
++#: src/functions.c:92
++msgid "NATIVE"
++msgstr "NATIVE"
++
++#: src/functions.c:95
++msgid "DLPORTIO"
++msgstr "DLPORTIO"
++
++#: src/functions.c:98
++msgid "IODLL"
++msgstr ""
++
++#: src/functions.c:160
++msgid "IO.DLL has been loaded successful, but the driver is not installed!\n"
++msgstr "IO.DLL załadowano pomyślnie, ale sterownik jest niezaładowany!\n"
++
++#: src/functions.c:187
++msgid "I/O functions are not available on this system.\n"
++msgstr "Funckje I/O nie są dostępne w tym systemie\n"
++
++#: src/options.c:98
++#, c-format
++msgid "Version of configuration file is unknown: '%s'.\n"
++msgstr "Wersje plików konfiguracyjnych są nieznane: '%s'.\n"
++
++#: src/options.c:114
++msgid "Could not open configuration file. Using default configuration.\n"
++msgstr "Nie można otworzyć pliku konfiguracyjnego. Używam domyślnej konfiguracji.\n"
++
++#: src/options.c:117
++msgid "Could not access home directory. Using default configuration.\n"
++msgstr "Brak dostępu do katalogu domowego. Używam domyślnej konfiguracji.\n"
++
++#: src/options.c:157
++#, c-format
++msgid "RegEnumValue failed with error %ld (%s). Value skipped.\n"
++msgstr "RegEnumValue zakończone błędem %ld (%s). Wartość pominięta.\n"
++
++#: src/options.c:172
++msgid "Could not open registry key. Using default configuration.\n"
++msgstr "Nie można otworzyć klucza rejestru. Używam domyślnej konfiguracji.\n"
++
++#: src/options.c:193
++#, c-format
++msgid ""
++"Could not get I/O permissions.\n"
++"\n"
++"Details: %s\n"
++"(Note that you must be root to run this program!)"
++msgstr ""
++"Brak dostępu do I/O.\n"
++"\n"
++"Detale: %s\n"
++"(Musisz być root'em aby skożystać z programu!!!)"
++
++#: src/options.c:196
++#, fuzzy
++msgid ""
++"Could not find any suitable system support for port I/O.\n"
++"\n"
++"You need to install \"IO.DLL\" or \"DriverLINX Port I/O Driver\" to run this "
++"program with this Windows version."
++msgstr ""
++"Nie mogę znaleść jakiegokolwiek wsparcia dla portów I/O.\n"
++"Proszę zainstalować \"IO.DLL\" lub \"DriverLINX Port I/O Driver\" \n"
++
++#: src/options.c:224
++msgid "Could not open configuration file. Configuration not saved.\n"
++msgstr "Błąd otwarcia pliku konfiguracyjnego. Konfiguracja niezapisana.\n"
++
++#: src/options.c:227
++msgid "Could not access home directory. Configuration not saved\n"
++msgstr "Brak dostępu do katalogu domowego. Konfiguracja niezapisana.\n"
++
++#: src/options.c:257
++msgid "Could not open registry key. Configuration not saved.\n"
++msgstr "Błąd otwiarcia klucza rejestru. Konfiguracja niezapisana.\n"
++
++#. update labels
++#: src/options.c:284
++#, c-format
++msgid ""
++"Data Port\n"
++"<big><b><i>0x%X</i></b></big>"
++msgstr ""
++"Data Port\n"
++"<big><b><i>0x%X</i></b></big>"
++
++#: src/options.c:287
++#, c-format
++msgid ""
++"Status Port\n"
++"<big><b><i>0x%X</i></b></big>"
++msgstr ""
++"Status Port\n"
++"<big><b><i>0x%X</i></b></big>"
++
++#: src/options.c:290
++#, c-format
++msgid ""
++"Control Port\n"
++"<big><b><i>0x%X</i></b></big>"
++msgstr ""
++"Control Port\n"
++"<big><b><i>0x%X</i></b></big>"
++
++#: src/options.c:344 src/options.c:379
++msgid "ACTIVE"
++msgstr "AKTYWNE"
++
++#: src/options.c:350 src/options.c:381 src/mainWnd.c:304 src/mainWnd.c:318
++msgid "INACTIVE"
++msgstr "WYŁĄCZONE"
++
++#: src/aboutDlg.c:72 src/mainWnd.c:273
++msgid "About..."
++msgstr "Informacje..."
++
++#: src/aboutDlg.c:103
++#, c-format
++msgid ""
++"<span font_family=\"Courier\" foreground=\"#EE5500\" weight=\"bold\" size="
++"\"large\">%s</span><span foreground=\"blue\"><i> is a tool for low-level "
++"managing of the parallel port.</i></span>"
++msgstr ""
++"<span font_family=\"Courier\" foreground=\"#EE5500\" weight=\"bold\" size="
++"\"large\">%s</span><span foreground=\"blue\"><i>\n Proste narzędzie do niskopoziomowego\n"
++"zarządzania i eksperymentowania z portem równoległym.\n"
++"Umożliwia \"wł/wył\" sygnału na konkretnych pinach.</i></span>"
++
++#: src/aboutDlg.c:110
++#, c-format
++msgid ""
++"\n"
++"<b><i>Author:</i></b> %s <i>&lt;%s&gt;</i>\n"
++"<b><i>Web:</i></b> %s\n"
++"This binary was compiled on %s.\n"
++"I/O functions: %s\n"
++msgstr ""
++"\n"
++"<b><i>Autor:</i></b> %s <i>&lt;%s&gt;</i>\n"
++"<b><i>Web:</i></b> %s\n"
++"Binarium zostało skompilowane dnia %s.\n"
++"Funkcje I/O: %s\n"
++
++#: src/mainWnd.c:238
++msgid "_File"
++msgstr "_Plik"
++
++#: src/mainWnd.c:245
++msgid "_Preferences..."
++msgstr "_Preferencje..."
++
++#: src/mainWnd.c:258 src/mainWnd.c:1065
++msgid "_Quit"
++msgstr "_Wyjście"
++
++#: src/mainWnd.c:266
++msgid "_Help"
++msgstr "_Pomoc"
++
++#: src/mainWnd.c:299
++msgid "Monitoring:"
++msgstr "Monitorowanie:"
++
++#: src/mainWnd.c:313
++msgid "Modify:"
++msgstr "Modyfikowanie:"
++
++#: src/mainWnd.c:327
++msgid "Show:"
++msgstr "Pokaż:"
++
++#: src/mainWnd.c:338
++msgid "LED"
++msgstr "LED"
++
++#: src/mainWnd.c:342
++msgid "Registry"
++msgstr "Rejestr"
++
++#: src/mainWnd.c:348
++msgid "Commands"
++msgstr "Komendy"
++
++#: src/mainWnd.c:609 src/mainWnd.c:793 src/mainWnd.c:1003
++msgid "Value: "
++msgstr "Wartość: "
++
++#: src/mainWnd.c:1043
++msgid "_About..."
++msgstr "_Informacje..."
++
++#: src/preferencesDlg.c:94
++msgid "Preferences..."
++msgstr "Preferencje..."
++
++#: src/preferencesDlg.c:113
++msgid "Base address: "
++msgstr "Adres podstawowy"
++
++#: src/preferencesDlg.c:133
++msgid "Timeout (ms): "
++msgstr "Opóźnienie (ms): "
++
++#: src/preferencesDlg.c:140
++msgid "Preferences"
++msgstr "Preferencje"
++
++#. show error message
++#: src/preferencesDlg_cb.c:58
++msgid "Invalid address!"
++msgstr "Zły adres!"
++
++#: src/preferencesDlg_cb.c:71
++#, c-format
++msgid ""
++"Could not get I/O permissions.\n"
++"\n"
++"Details: %s\n"
++msgstr ""
++"Brak dostępu do I/O.\n"
++"\n"
++"Detale: %s\n"
++
++#. show error message
++#: src/preferencesDlg_cb.c:86
++msgid "Invalid timeout!"
++msgstr "Nieprawidłowe opóźnienie!"
