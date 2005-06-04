@@ -23,9 +23,9 @@ diff -uNr lptmanager-1.1.orig/po/pl.po lptmanager-1.1/po/pl.po
 +"Project-Id-Version: LPT Manager 1.0\n"
 +"Report-Msgid-Bugs-To: \n"
 +"POT-Creation-Date: 2004-09-20 11:37+0200\n"
-+"PO-Revision-Date: 2002-08-22 22:57+0200\n"
++"PO-Revision-Date: 2005-06-04 11:54+0200\n"
 +"Last-Translator: Michal Abramowicz <m.a@abram.eu.org>\n"
-+"Language-Team: Polish <podaj@adres>>\n"
++"Language-Team: Polish <language-team-pl@lists.sourceforge.net>\n"
 +"MIME-Version: 1.0\n"
 +"Content-Type: text/plain; charset=UTF-8\n"
 +"Content-Transfer-Encoding: 8bit\n"
@@ -44,20 +44,20 @@ diff -uNr lptmanager-1.1.orig/po/pl.po lptmanager-1.1/po/pl.po
 +
 +#: src/functions.c:98
 +msgid "IODLL"
-+msgstr ""
++msgstr "IODLL"
 +
 +#: src/functions.c:160
 +msgid "IO.DLL has been loaded successful, but the driver is not installed!\n"
-+msgstr "IO.DLL załadowano pomyślnie, ale sterownik jest niezaładowany!\n"
++msgstr "IO.DLL załadowano pomyślnie, ale sterownik jest niezainstalowany!\n"
 +
 +#: src/functions.c:187
 +msgid "I/O functions are not available on this system.\n"
-+msgstr "Funckje I/O nie są dostępne w tym systemie\n"
++msgstr "Funkcje I/O nie są dostępne w tym systemie\n"
 +
 +#: src/options.c:98
 +#, c-format
 +msgid "Version of configuration file is unknown: '%s'.\n"
-+msgstr "Wersje plików konfiguracyjnych są nieznane: '%s'.\n"
++msgstr "Wersja pliku konfiguracyjnego jest nieznana: '%s'.\n"
 +
 +#: src/options.c:114
 +msgid "Could not open configuration file. Using default configuration.\n"
@@ -86,8 +86,8 @@ diff -uNr lptmanager-1.1.orig/po/pl.po lptmanager-1.1/po/pl.po
 +msgstr ""
 +"Brak dostępu do I/O.\n"
 +"\n"
-+"Detale: %s\n"
-+"(Musisz być root'em aby skożystać z programu!!!)"
++"Szczegóły: %s\n"
++"(Musisz być rootem aby skorzystać z programu!!!)"
 +
 +#: src/options.c:196
 +#, fuzzy
@@ -97,8 +97,8 @@ diff -uNr lptmanager-1.1.orig/po/pl.po lptmanager-1.1/po/pl.po
 +"You need to install \"IO.DLL\" or \"DriverLINX Port I/O Driver\" to run this "
 +"program with this Windows version."
 +msgstr ""
-+"Nie mogę znaleść jakiegokolwiek wsparcia dla portów I/O.\n"
-+"Proszę zainstalować \"IO.DLL\" lub \"DriverLINX Port I/O Driver\" \n"
++"Nie mogę znaleźć jakiejkolwiek obsługi portów I/O.\n"
++"Proszę zainstalować \"IO.DLL\" lub \"DriverLINX Port I/O Driver\" aby uruchomić ten program pod tą wersją Windows."
 +
 +#: src/options.c:224
 +msgid "Could not open configuration file. Configuration not saved.\n"
@@ -110,7 +110,7 @@ diff -uNr lptmanager-1.1.orig/po/pl.po lptmanager-1.1/po/pl.po
 +
 +#: src/options.c:257
 +msgid "Could not open registry key. Configuration not saved.\n"
-+msgstr "Błąd otwiarcia klucza rejestru. Konfiguracja niezapisana.\n"
++msgstr "Błąd otwarcia klucza rejestru. Konfiguracja niezapisana.\n"
 +
 +#. update labels
 +#: src/options.c:284
@@ -162,7 +162,7 @@ diff -uNr lptmanager-1.1.orig/po/pl.po lptmanager-1.1/po/pl.po
 +"<span font_family=\"Courier\" foreground=\"#EE5500\" weight=\"bold\" size="
 +"\"large\">%s</span><span foreground=\"blue\"><i>\n Proste narzędzie do niskopoziomowego\n"
 +"zarządzania i eksperymentowania z portem równoległym.\n"
-+"Umożliwia \"wł/wył\" sygnału na konkretnych pinach.</i></span>"
++"Umożliwia włączanie/wyłączanie sygnału na konkretnych stykach.</i></span>"
 +
 +#: src/aboutDlg.c:110
 +#, c-format
@@ -257,9 +257,9 @@ diff -uNr lptmanager-1.1.orig/po/pl.po lptmanager-1.1/po/pl.po
 +msgstr ""
 +"Brak dostępu do I/O.\n"
 +"\n"
-+"Detale: %s\n"
++"Szczegóły: %s\n"
 +
 +#. show error message
 +#: src/preferencesDlg_cb.c:86
 +msgid "Invalid timeout!"
-+msgstr "Nieprawidłowe opóźnienie!"
++msgstr "Nieprawidłowy czas oczekiwania!"
