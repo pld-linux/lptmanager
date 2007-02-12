@@ -1,5 +1,5 @@
 Summary:	A nice tool for low-level managing of the parallel port
-Summary(pl):	Proste narzêdzie do niskopoziomowego zarz±dzania portem równoleg³ym
+Summary(pl.UTF-8):   Proste narzÄ™dzie do niskopoziomowego zarzÄ…dzania portem rÃ³wnolegÅ‚ym
 Name:		lptmanager
 Version:	1.1
 Release:	1
@@ -20,10 +20,10 @@ A nice tool for low-level managing of the parallel port and for
 experimenting with it. It uses GTK+2 for the GUI and runs on Linux and
 Windows (with mingw32).
 
-%description -l pl
-Proste narzêdzie do niskopoziomowego zarz±dzania portem równoleg³ym i
-eksperymentowania z nim. Umo¿liwia w³±czanie/wy³±czanie sygna³u na
-konkretnych stykach. U¿ywa GTK+2 dla menu, dzia³a z Linuksem oraz
+%description -l pl.UTF-8
+Proste narzÄ™dzie do niskopoziomowego zarzÄ…dzania portem rÃ³wnolegÅ‚ym i
+eksperymentowania z nim. UmoÅ¼liwia wÅ‚Ä…czanie/wyÅ‚Ä…czanie sygnaÅ‚u na
+konkretnych stykach. UÅ¼ywa GTK+2 dla menu, dziaÅ‚a z Linuksem oraz
 Windows (mingw32).
 
 %prep
