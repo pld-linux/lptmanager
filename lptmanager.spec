@@ -1,5 +1,5 @@
 Summary:	A nice tool for low-level managing of the parallel port
-Summary(pl.UTF-8):   Proste narzędzie do niskopoziomowego zarządzania portem równoległym
+Summary(pl.UTF-8):	Proste narzędzie do niskopoziomowego zarządzania portem równoległym
 Name:		lptmanager
 Version:	1.1
 Release:	1
